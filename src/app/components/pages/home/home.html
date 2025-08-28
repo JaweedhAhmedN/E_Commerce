@@ -1,0 +1,71 @@
+<!-- Home Hero -->
+<section class="hero-section m-3">
+    <div class="text-center">
+        <h1 class="fw-bold mb-2 fs-1 theme-major-item">Welcome to {{ appName }}</h1>
+        <p>Your one-stop destination for everything you need!</p>
+    </div>
+</section>
+<hr>
+
+<!-- Carousel -->
+<section class="m-2">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators d-flex">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="banners/banner-1.jpg" alt="banner-1" class="d-block rounded">
+                    </div>
+                    <div class="col-md-5">
+                        <img src="banners/banner-2.jpg" alt="banner-2" class="d-block rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="banners/banner-3.jpg" alt="banner-3" class="d-block rounded">
+                    </div>
+                    <div class="col-md-5">
+                        <img src="banners/banner-1.jpg" alt="banner-1 again" class="d-block rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev text-dark" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+<hr>
+
+<!-- Categories -->
+<section class="m-4">
+    <div class="text-center">
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Explore our wide range of product categories</p>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 mb-4" *ngFor="let category of categoryList | slice:0:12">
+                <div class="theme-border rounded p-2 text-center h-100">
+                    <a class="fw-bold theme-major-item">{{ category }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
