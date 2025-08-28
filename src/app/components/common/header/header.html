@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-sm navbar-dark theme-major navbar-height py-3">
+    <div class="container-fluid">
+        <!-- App Logo -->
+        <a class="navbar-brand" href="#">
+            <img [src]="appLogo" alt="Avatar Logo" style="width:40px;" class="rounded">
+        </a>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <div class="d-flex flex-column flex-sm-row w-100 align-items-center justify-content-between">
+
+                <!-- Centered Search Form -->
+                <div class="d-flex justify-content-center w-100 my-2 my-sm-0">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-light" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right-Aligned Links -->
+                <ul class="navbar-nav ms-sm-auto text-center text-sm-start">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)">
+                            <i class="bi bi-grid-3x3-gap-fill fs-4"></i>
+                            <span class="nav-text ms-2">Categories</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)">
+                            <i class="bi bi-bag-fill fs-4"></i>
+                            <span class="nav-text ms-2">Cart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)">
+                            <i class="bi bi-box2-heart-fill fs-4"></i>
+                            <span class="nav-text ms-2">Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)">
+                            <i class="bi bi-truck fs-3"></i>
+                            <span class="nav-text ms-2">Orders</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)">
+                            <i class="bi bi-person-square fs-4"></i>
+                            <span class="nav-text ms-2">Login/Signup</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
