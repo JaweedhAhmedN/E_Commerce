@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/* Theme Background Colors */
+.theme-major {
+    background-color: #0078ad;
+}
+
+.theme-minor {
+    background-color: #0c5273;
+}
+
+.theme-accent {
+    background-color: #0c5273;
+}
+
+/* Theme Item Colors */
+.theme-major-item {
+    color: #0078ad;
+}
+
+.theme-minor-item {
+    color: #0c5273;
+}
+
+.theme-accent-item {
+    color: #0c5273;
+}
+
+/* Link Pointer */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
