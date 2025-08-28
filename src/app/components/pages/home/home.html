@@ -1,10 +1,11 @@
 <!-- Home Hero -->
-<section class="hero-section py-3 m-2">
+<section class="hero-section m-3">
     <div class="text-center">
-        <h1 class="fw-bold mb-2 fs-1 theme-major-item">Welcome to MegaMart</h1>
+        <h1 class="fw-bold mb-2 fs-1 theme-major-item">Welcome to {{ appName }}</h1>
         <p>Your one-stop destination for everything you need!</p>
     </div>
 </section>
+<hr>
 
 <!-- Carousel -->
 <section class="m-2">
@@ -48,5 +49,23 @@
         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
+    </div>
+</section>
+<hr>
+
+<!-- Categories -->
+<section class="m-4">
+    <div class="text-center">
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Explore our wide range of product categories</p>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 mb-4" *ngFor="let category of categoryList | slice:0:12">
+                <div class="theme-border rounded p-2 text-center h-100">
+                    <a class="fw-bold theme-major-item">{{ category }}</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
