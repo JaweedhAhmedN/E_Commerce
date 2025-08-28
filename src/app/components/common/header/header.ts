@@ -9,4 +9,5 @@ import { Env } from '../../../../env/env';
 })
 export class Header {
   appLogo: string = Env.appLogo;
+  appName: string = Env.appName;
 }
