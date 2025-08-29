@@ -2,9 +2,15 @@ import { Routes } from '@angular/router';
 import { NotFound } from './components/pages/not-found/not-found';
 import { Home } from './components/pages/home/home';
 import { AboutUs } from './components/common/footer/help-support/about-us/about-us';
+import { Faq } from './components/common/footer/help-support/faq/faq';
 
 export const routes: Routes = [
+    /* App Routes */
+    // Footer Help-Support Routes
     {path: 'about-us', component: AboutUs},
+    {path: 'faq', component: Faq},
+
+    // Global Routes
     {path: '', component: Home},
     {path: '**', component: NotFound},
 ];
