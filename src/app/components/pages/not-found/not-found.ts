@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -7,6 +7,10 @@ import { RouterLink } from '@angular/router';
   templateUrl: './not-found.html',
   styleUrl: './not-found.css'
 })
-export class NotFound {
+export class NotFound implements OnInit{
 
+  ngOnInit(): void {
+    // Auto Scroll Top
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

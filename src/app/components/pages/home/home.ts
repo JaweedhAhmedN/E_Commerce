@@ -9,14 +9,16 @@ import { Env } from '../../../../env/env';
   templateUrl: './home.html',
   styleUrl: './home.css'
 })
-export class Home implements OnInit{
+export class Home implements OnInit {
   appName = Env.appName;
 
   categoryList: any[] = [];
 
-  constructor(private homeService: HomeService) {}
-  
+  constructor(private homeService: HomeService) { }
+
   ngOnInit(): void {
-   this.homeService.getCategoryList().subscribe(data => {this.categoryList = data});
+    // Auto Scroll Top 
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.homeService.getCategoryList().subscribe(data => { this.categoryList = data });
   }
 }

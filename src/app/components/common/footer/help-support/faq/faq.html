@@ -1,0 +1,107 @@
+<!-- FAQ Page -->
+<div class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="faq-header text-center mb-5">
+        <h1 class="display-4 theme-major-item fw-bold">Frequently Asked Questions</h1>
+        <p class="lead text-muted">Answers to common questions about {{ appName }}</p>
+      </div>
+
+      <div class="faq-content">
+        <!-- General Questions -->
+        <section class="mb-5">
+          <h2 class="theme-major-item mb-4">General</h2>
+          <div class="accordion" id="faqGeneral">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                  <i class="bi bi-question-circle-fill me-2 text-primary"></i>
+                  What is {{ appName }}?
+                </button>
+              </h2>
+              <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  {{ appName }} is an online marketplace offering a wide range of products with a focus on quality, convenience, and customer satisfaction.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                  <i class="bi bi-truck me-2 text-success"></i>
+                  How does shipping work?
+                </button>
+              </h2>
+              <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  We offer fast and reliable shipping across India. Orders are typically processed within 24 hours and delivered within 2–5 business days.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                  <i class="bi bi-lock-fill me-2 text-warning"></i>
+                  Is my data secure?
+                </button>
+              </h2>
+              <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                <div class="accordion-body">
+                  Absolutely. We use industry-standard encryption and security protocols to protect your personal and payment information.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Orders & Returns -->
+        <section class="mb-5 bg-light p-4 rounded">
+          <h2 class="theme-major-item mb-4">Orders & Returns</h2>
+          <div class="accordion" id="faqOrders">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                  <i class="bi bi-arrow-repeat me-2 text-danger"></i>
+                  What is your return policy?
+                </button>
+              </h2>
+              <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqOrders">
+                <div class="accordion-body">
+                  We offer a 7-day return window for most products. Items must be unused and in original packaging. Visit our Returns page for full details.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="faq5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                  <i class="bi bi-credit-card-2-front-fill me-2 text-info"></i>
+                  What payment methods do you accept?
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqOrders">
+                <div class="accordion-body">
+                  We accept all major credit/debit cards, UPI, Net Banking, and popular wallets like Paytm and PhonePe.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Support Section -->
+        <section class="mb-5">
+          <h2 class="theme-major-item mb-4 text-center">Need More Help?</h2>
+          <div class="text-center">
+            <p class="text-muted mb-3">If your question isn't listed here, our support team is always ready to assist you.</p>
+            <div class="btn theme-accent pt-3 px-3">
+              <p><i class="bi bi-whatsapp"></i> +91 <span style="color: #0078ad;">98765 43210</span></p>
+              <p><i class="bi bi-telephone"></i> +91 <span style="color: #0078ad;">98765 43210</span></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
