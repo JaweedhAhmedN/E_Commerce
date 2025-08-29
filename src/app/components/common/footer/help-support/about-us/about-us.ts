@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Env } from '../../../../../../env/env';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-not-found',
+  selector: 'app-about-us',
   imports: [RouterLink],
-  templateUrl: './not-found.html',
-  styleUrl: './not-found.css'
+  templateUrl: './about-us.html',
+  styleUrl: './about-us.css'
 })
-export class NotFound implements OnInit{
+export class AboutUs implements OnInit{
+  appName = Env.appName;
 
   ngOnInit(): void {
     // Auto Scroll Top
