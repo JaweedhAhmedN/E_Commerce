@@ -11,7 +11,7 @@ export class EWastePolicy implements OnInit{
   appName = Env.appName;
 
   ngOnInit(): void {
-    // auto scroll top
+    // Auto Scroll Top
     window.scrollTo({ top: 0, behavior: 'smooth' }); 
   }
 }
