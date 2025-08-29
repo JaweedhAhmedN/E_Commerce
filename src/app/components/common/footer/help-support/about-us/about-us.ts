@@ -12,7 +12,7 @@ export class AboutUs implements OnInit{
   appName = Env.appName;
 
   ngOnInit(): void {
-    // Auto Scroll Top
+    // auto scroll top
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
