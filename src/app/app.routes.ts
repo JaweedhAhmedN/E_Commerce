@@ -4,6 +4,7 @@ import { Home } from './components/pages/home/home';
 import { AboutUs } from './components/common/footer/help-support/about-us/about-us';
 import { Faq } from './components/common/footer/help-support/faq/faq';
 import { TermsConditions } from './components/common/footer/help-support/terms-conditions/terms-conditions';
+import { PrivacyPolicy } from './components/common/footer/help-support/privacy-policy/privacy-policy';
 
 export const routes: Routes = [
     /* App Routes */
@@ -11,6 +12,7 @@ export const routes: Routes = [
     {path: 'about-us', component: AboutUs},
     {path: 'faq', component: Faq},
     {path: 'terms-conditions', component: TermsConditions},
+    {path: 'privacy-policy', component: PrivacyPolicy},
 
     // Global Routes
     {path: '', component: Home},
